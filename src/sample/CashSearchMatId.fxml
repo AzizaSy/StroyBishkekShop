@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CashSearchMatId">
+   <children>
+      <TextField layoutX="130.0" layoutY="173.0" prefHeight="25.0" prefWidth="386.0" promptText="ID:" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="124.0" />
+      <Button layoutX="285.0" layoutY="233.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #bca8e1;" text="Search" />
+      <Button layoutX="459.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #f8dd0a;" text="Menu" />
+      <Label layoutX="172.0" layoutY="120.0" prefHeight="18.0" prefWidth="285.0" text="Enter the ID of the material you want to find!" textFill="#fafafa" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="183.0">
+         <font>
+            <Font name="Constantia" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
