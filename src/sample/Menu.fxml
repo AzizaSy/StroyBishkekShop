@@ -11,7 +11,7 @@
    <children>
       <AnchorPane layoutY="22.0" prefHeight="62.0" prefWidth="640.0" style="-fx-background-color: #fafafa;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="22.0">
          <children>
-            <Label layoutX="42.0" layoutY="25.0" text="Bishkek Shop" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="457.0">
+            <Label layoutX="42.0" layoutY="25.0" text="Bishkek Shop">
                <font>
                   <Font name="Constantia" size="24.0" />
                </font>
@@ -23,10 +23,10 @@
             <Font name="Constantia" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="login" layoutX="211.0" layoutY="154.0" prefHeight="25.0" prefWidth="173.0" promptText="Login:" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="256.0" />
-      <PasswordField fx:id="password" layoutX="211.0" layoutY="200.0" prefHeight="25.0" prefWidth="149.0" promptText="Password:" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="280.0" />
-      <Button fx:id="go" layoutX="260.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #f8dd0a;" text="Go" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="317.0" />
-      <Button fx:id="cancel" layoutX="260.0" layoutY="313.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #f8dd0a;" text="Cancel" />
-      <Label fx:id="loginMassage" layoutX="255.0" layoutY="237.0" textFill="#e40b0b" />
+      <TextField fx:id="login" layoutX="211.0" layoutY="154.0" prefHeight="25.0" prefWidth="196.0" promptText="Login:" />
+      <PasswordField fx:id="password" layoutX="211.0" layoutY="200.0" prefHeight="25.0" prefWidth="196.0" promptText="Password:" />
+      <Button fx:id="go" layoutX="332.0" layoutY="261.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #f8dd0a;" text="Go" />
+      <Button fx:id="cancel" layoutX="224.0" layoutY="261.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #f8dd0a;" text="Cancel" />
+      <Label fx:id="loginMassage" layoutX="255.0" layoutY="237.0" prefHeight="17.0" prefWidth="126.0" textFill="#e40b0b" />
    </children>
 </AnchorPane>

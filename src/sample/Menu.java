@@ -32,18 +32,24 @@ public class Menu  {
     private PasswordField password;
 
     @FXML
-    void Scene2(ActionEvent event) throws IOException {
-
-        Stage s = (Stage) go.getScene().getWindow();
-        s.close();
-
-        Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("fxml/Scene2.fxml"));
-        Scene scene = new Scene((Parent) fxmlLoader.load(),640,375);
-        stage.setTitle("StroyShop");
-        stage.setScene(scene);
-        stage.show();
+    void cancelOnAction(ActionEvent event) throws IOException {
+       Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+       stage = (Stage)(Node)event.getSource()).getScene()get.Window();
+       scene = new Scene(root);
+       stage.setScene(scene);
+       stage.show();
     }}
+
+//        Stage s = (Stage) go.getScene().getWindow();
+//        s.close();
+//
+//        Stage stage = new Stage();
+//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("fxml/CashierMenu.fxml"));
+//        Scene scene = new Scene((Parent) fxmlLoader.load(),640,375);
+//        stage.setTitle("StroyShop");
+//        stage.setScene(scene);
+//        stage.show();
+//    }}
 
 
 

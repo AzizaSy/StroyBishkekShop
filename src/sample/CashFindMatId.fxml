@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CashFindMatId">
    <children>
-      <ListView layoutX="87.0" layoutY="59.0" prefHeight="253.0" prefWidth="466.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="87.0" AnchorPane.topAnchor="59.0" />
-      <Button layoutX="556.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" />
-      <Label layoutX="231.0" layoutY="30.0" prefHeight="17.0" prefWidth="322.0" text="Material with ID found !" textFill="#fafafa" AnchorPane.bottomAnchor="322.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="87.0" AnchorPane.topAnchor="30.0">
-         <font>
-            <Font name="Constantia" size="14.0" />
-         </font>
-      </Label>
+      <Button layoutX="583.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" />
+      <TableView layoutX="18.0" layoutY="72.0" prefHeight="253.0" prefWidth="605.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="72.0">
+        <columns>
+          <TableColumn prefWidth="35.0" text="ID" />
+          <TableColumn prefWidth="88.0" text="Name" />
+            <TableColumn prefWidth="102.0" text="Brand" />
+            <TableColumn prefWidth="96.0" text="Quantaty" />
+            <TableColumn prefWidth="54.0" text="Preis" />
+            <TableColumn prefWidth="75.0" text="Supplier Name" />
+            <TableColumn prefWidth="75.0" text="Supplier number" />
+            <TableColumn prefWidth="79.0" text="Suppliers address" />
+        </columns>
+      </TableView>
+      <TextField layoutX="145.0" layoutY="30.0" prefHeight="25.0" prefWidth="287.0" promptText="ID:" />
    </children>
 </AnchorPane>

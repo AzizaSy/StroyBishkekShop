@@ -9,10 +9,11 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     @Override
+
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
         primaryStage.setTitle("Bishkek Shop");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 640, 370));
         primaryStage.show();
     }
 
