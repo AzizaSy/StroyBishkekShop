@@ -7,22 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CashFindMatBrand">
     <children>
-        <TableView layoutX="14.0" layoutY="97.0" prefHeight="329.0" prefWidth="752.0">
+        <TableView layoutX="14.0" layoutY="97.0" prefHeight="329.0" prefWidth="752.0" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="97.0">
             <columns>
                 <TableColumn prefWidth="35.0" text="ID" />
-                <TableColumn prefWidth="88.0" text="Name" />
-                <TableColumn prefWidth="102.0" text="Brand" />
-                <TableColumn prefWidth="96.0" text="Quantaty" />
+                <TableColumn prefWidth="100.0" text="Name" />
+                <TableColumn prefWidth="90.0" text="Brand" />
+                <TableColumn prefWidth="131.0" text="Quantaty" />
                 <TableColumn prefWidth="54.0" text="Preis" />
-                <TableColumn prefWidth="128.0" text="Supplier name" />
-                <TableColumn prefWidth="126.0" text="Supplier number" />
-                <TableColumn prefWidth="135.0" text="Suppliers address" />
+                <TableColumn prefWidth="99.0" text="Supplier name" />
+                <TableColumn prefWidth="112.0" text="Supplier number" />
+                <TableColumn prefWidth="139.0" text="Suppliers address" />
             </columns>
         </TableView>
-        <Button layoutX="672.0" layoutY="448.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" />
+        <Button layoutX="672.0" layoutY="448.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="672.0" AnchorPane.rightAnchor="81.0" />
         <Label layoutX="40.0" layoutY="44.0" text="Brand mateBrand materialBrand materialBrand materialrial" textFill="#fafafa">
             <font>
                 <Font name="Constantia" size="14.0" />

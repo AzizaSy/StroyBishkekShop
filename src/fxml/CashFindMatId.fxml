@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CashFindMatId">
    <children>
-      <Button layoutX="583.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" />
+      <Button layoutX="554.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
       <TableView layoutX="18.0" layoutY="72.0" prefHeight="253.0" prefWidth="605.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="72.0">
         <columns>
           <TableColumn prefWidth="35.0" text="ID" />
@@ -21,6 +23,12 @@
             <TableColumn prefWidth="79.0" text="Suppliers address" />
         </columns>
       </TableView>
-      <TextField layoutX="145.0" layoutY="30.0" prefHeight="25.0" prefWidth="287.0" promptText="ID:" />
+      <TextField layoutX="189.0" layoutY="30.0" prefHeight="25.0" prefWidth="287.0" promptText="ID:" AnchorPane.leftAnchor="189.0" AnchorPane.rightAnchor="164.0" />
+      <Button layoutX="516.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #241c68;" text="Search" textFill="#fafafa" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="30.0" />
+      <Label layoutX="45.0" layoutY="34.0" text="Enter brand id to find" textFill="#fafafa">
+         <font>
+            <Font name="Constantia" size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

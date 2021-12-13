@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin">
+<AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.menuAdmin">
     <children>
         <Button layoutX="384.0" layoutY="239.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="163.0" style="-fx-background-color: #241c68;" text="DEALING WITH SUPPLIERS" textFill="#fafafa" />
         <Button layoutX="95.0" layoutY="136.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="FIND BRAND MATERIAL" textFill="#fafafa" />
