@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FindSuppId">
+   <children>
+      <TableView fx:id="suppTable" layoutX="39.0" layoutY="85.0" prefHeight="229.0" prefWidth="540.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="85.0">
+         <columns>
+            <TableColumn fx:id="suppId" prefWidth="56.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="117.0" text="Supplier Name" />
+            <TableColumn fx:id="surname" prefWidth="128.0" text="Supplire Surname" />
+            <TableColumn fx:id="number" minWidth="4.0" prefWidth="113.0" text="Number" />
+            <TableColumn fx:id="address" prefWidth="125.0" text="Address" />
+         </columns>
+      </TableView>
+      <Button fx:id="search" layoutX="490.0" layoutY="44.0" mnemonicParsing="false" style="-fx-background-color: #241c68;" text="Search" textFill="#fafafa" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="44.0" />
+      <Button fx:id="menu" layoutX="542.0" layoutY="322.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="23.0" AnchorPane.rightAnchor="51.0" />
+      <TextField fx:id="supplierId" layoutX="201.0" layoutY="44.0" prefHeight="25.0" prefWidth="261.0" promptText="Supplier ID :" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="178.0" />
+      <Label layoutX="39.0" layoutY="48.0" text="Enter Supplier id to find " textFill="#fafafa">
+         <font>
+            <Font name="Constantia" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

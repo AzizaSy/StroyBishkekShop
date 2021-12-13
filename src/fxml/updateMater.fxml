@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.UpdateMater">
+   <children>
+      <TextField fx:id="materislId" layoutX="171.0" layoutY="86.0" prefHeight="25.0" prefWidth="226.0" promptText="Material ID :" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="243.0" />
+      <TextField fx:id="name" layoutX="171.0" layoutY="128.0" prefHeight="25.0" prefWidth="226.0" promptText="Name :" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="243.0" />
+      <TextField fx:id="brand" layoutX="171.0" layoutY="173.0" prefHeight="25.0" prefWidth="226.0" promptText="Brand :" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="243.0" />
+      <TextField fx:id="quantaty" layoutX="171.0" layoutY="220.0" prefHeight="25.0" prefWidth="226.0" promptText="Quantaty :" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="243.0" />
+      <TextField fx:id="preis" layoutX="171.0" layoutY="274.0" prefHeight="25.0" prefWidth="226.0" promptText="Preis :" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="243.0" />
+      <Button fx:id="change" layoutX="454.0" layoutY="274.0" mnemonicParsing="false" style="-fx-background-color: #241c68;" text="Change" textFill="#fafafa" AnchorPane.rightAnchor="129.0" />
+      <Button fx:id="menu" layoutX="545.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="31.0" AnchorPane.rightAnchor="48.0" />
+      <Label alignment="CENTER" layoutX="159.0" layoutY="49.0" text="Enter a value on the correct items to edit" textFill="#fafafa" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="230.0">
+         <font>
+            <Font name="Constantia Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
