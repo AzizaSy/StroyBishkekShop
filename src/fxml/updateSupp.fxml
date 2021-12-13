@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.updateSupp">
     <children>
         <Label layoutX="52.0" layoutY="87.0" prefHeight="15.0" prefWidth="190.0" text="Fill in the correct items to edit" textFill="#fafafa">
@@ -14,12 +13,12 @@
                 <Font name="Constantia" size="13.0" />
             </font>
         </Label>
-        <TextField layoutX="277.0" layoutY="90.0" prefHeight="25.0" prefWidth="190.0" promptText="Supplier Name :" />
-        <TextField layoutX="274.0" layoutY="140.0" prefHeight="25.0" prefWidth="190.0" promptText="Surname :" />
-        <TextField layoutX="277.0" layoutY="191.0" prefHeight="25.0" prefWidth="190.0" promptText="Phone number :" />
-        <TextField layoutX="277.0" layoutY="242.0" prefHeight="25.0" prefWidth="190.0" promptText="Address :" />
-        <Button layoutX="540.0" layoutY="242.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #241c68;" text="Change" textFill="#fafafa" />
-        <Button layoutX="52.0" layoutY="290.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" />
+        <TextField fx:id="suppName" layoutX="277.0" layoutY="90.0" prefHeight="25.0" prefWidth="190.0" promptText="Supplier Name :" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="173.0" />
+        <TextField fx:id="surname" layoutX="274.0" layoutY="140.0" prefHeight="25.0" prefWidth="190.0" promptText="Surname :" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="173.0" />
+        <TextField fx:id="number" layoutX="277.0" layoutY="191.0" prefHeight="25.0" prefWidth="190.0" promptText="Phone number :" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="173.0" />
+        <TextField fx:id="address" layoutX="277.0" layoutY="242.0" prefHeight="25.0" prefWidth="190.0" promptText="Address :" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="173.0" />
+        <Button fx:id="change" layoutX="540.0" layoutY="242.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #241c68;" text="Change" textFill="#fafafa" AnchorPane.rightAnchor="41.0" />
+        <Button fx:id="menu" layoutX="52.0" layoutY="293.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="529.0" AnchorPane.topAnchor="293.0" />
         <Label layoutX="52.0" layoutY="34.0" text="Update Supplier" textFill="#fafafa">
             <font>
                 <Font name="Constantia Bold" size="14.0" />

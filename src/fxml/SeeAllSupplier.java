@@ -1,4 +1,4 @@
-package sample;
+package fxml;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class CashFindMatBrand {
+public class SeeAllSupplier {
 
     @FXML
     private ResourceBundle resources;
@@ -16,34 +16,25 @@ public class CashFindMatBrand {
     private URL location;
 
     @FXML
-    private TableColumn<?, ?> brand;
+    private TableColumn<?, ?> address;
 
     @FXML
-    private TableColumn<?, ?> id;
-
-    @FXML
-    private Button mennu;
+    private Button menu;
 
     @FXML
     private TableColumn<?, ?> name;
 
     @FXML
-    private TableColumn<?, ?> preis;
+    private TableColumn<?, ?> number;
 
     @FXML
-    private TableColumn<?, ?> quantaty;
+    private TableColumn<?, ?> suppId;
 
     @FXML
-    private TableColumn<?, ?> suppAddress;
+    private TableView<?> suppTable;
 
     @FXML
-    private TableColumn<?, ?> suppName;
-
-    @FXML
-    private TableColumn<?, ?> suppNumber;
-
-    @FXML
-    private TableView<?> table;
+    private TableColumn<?, ?> surname;
 
     @FXML
     void initialize() {
@@ -51,3 +42,4 @@ public class CashFindMatBrand {
     }
 
 }
+

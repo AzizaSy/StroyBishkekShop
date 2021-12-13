@@ -5,13 +5,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Supplier">
     <children>
-        <Button layoutX="370.0" layoutY="216.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="DELETE SEPPLIER" textFill="#fafafa" />
-        <Button layoutX="105.0" layoutY="129.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="ADD NEW SUPPLIER" textFill="#fafafa" />
-        <Button layoutX="370.0" layoutY="129.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="UPDATE SUPPLIER" textFill="#fafafa" />
-        <Button layoutX="105.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #f8dd0a;" text="Menu" />
+        <Button fx:id="deleteSupp" layoutX="370.0" layoutY="216.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="DELETE SEPPLIER" textFill="#fafafa" />
+        <Button fx:id="addNewSupp" layoutX="105.0" layoutY="129.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="ADD NEW SUPPLIER" textFill="#fafafa" />
+        <Button fx:id="updateSupp" layoutX="370.0" layoutY="129.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="UPDATE SUPPLIER" textFill="#fafafa" />
+        <Button fx:id="menu" layoutX="105.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #f8dd0a;" text="Menu" />
         <Label layoutX="64.0" layoutY="51.0" text="DEALING WITH SUPPLIERS" textFill="#fafafa">
             <font>
                 <Font name="Constantia" size="14.0" />

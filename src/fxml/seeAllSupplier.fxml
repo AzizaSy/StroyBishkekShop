@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.SeeAllSupplier">
+   <children>
+      <TableView fx:id="suppTable" layoutX="60.0" layoutY="94.0" prefHeight="200.0" prefWidth="520.0" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="94.0">
+        <columns>
+          <TableColumn fx:id="suppId" prefWidth="56.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="117.0" text="Supplier Name" />
+            <TableColumn fx:id="surname" prefWidth="128.0" text="Supplire Surname" />
+            <TableColumn fx:id="number" minWidth="4.0" prefWidth="113.0" text="Number" />
+            <TableColumn fx:id="address" prefWidth="105.0" text="Address" />
+        </columns>
+      </TableView>
+      <Button fx:id="menu" layoutX="555.0" layoutY="316.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="38.0" />
+      <Label alignment="CENTER" layoutX="268.0" layoutY="52.0" prefHeight="18.0" prefWidth="73.0" text="Suppliers" textFill="#fafafa" AnchorPane.leftAnchor="268.0" AnchorPane.rightAnchor="299.0">
+         <font>
+            <Font name="Constantia Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

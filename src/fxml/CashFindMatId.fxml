@@ -10,21 +10,21 @@
 
 <AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CashFindMatId">
    <children>
-      <Button layoutX="554.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
-      <TableView layoutX="18.0" layoutY="72.0" prefHeight="253.0" prefWidth="605.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="72.0">
+      <Button fx:id="menu" layoutX="554.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <TableView fx:id="table" layoutX="18.0" layoutY="72.0" prefHeight="253.0" prefWidth="605.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="72.0">
         <columns>
-          <TableColumn prefWidth="35.0" text="ID" />
-          <TableColumn prefWidth="88.0" text="Name" />
-            <TableColumn prefWidth="102.0" text="Brand" />
-            <TableColumn prefWidth="96.0" text="Quantaty" />
-            <TableColumn prefWidth="54.0" text="Preis" />
-            <TableColumn prefWidth="75.0" text="Supplier Name" />
-            <TableColumn prefWidth="75.0" text="Supplier number" />
-            <TableColumn prefWidth="79.0" text="Suppliers address" />
+          <TableColumn fx:id="tableId" prefWidth="35.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="88.0" text="Name" />
+            <TableColumn fx:id="brand" prefWidth="102.0" text="Brand" />
+            <TableColumn fx:id="quantaty" prefWidth="96.0" text="Quantaty" />
+            <TableColumn fx:id="preis" prefWidth="54.0" text="Preis" />
+            <TableColumn fx:id="suppName" prefWidth="75.0" text="Supplier Name" />
+            <TableColumn fx:id="suppNumber" prefWidth="75.0" text="Supplier number" />
+            <TableColumn fx:id="suppAddress" prefWidth="79.0" text="Suppliers address" />
         </columns>
       </TableView>
-      <TextField layoutX="189.0" layoutY="30.0" prefHeight="25.0" prefWidth="287.0" promptText="ID:" AnchorPane.leftAnchor="189.0" AnchorPane.rightAnchor="164.0" />
-      <Button layoutX="516.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #241c68;" text="Search" textFill="#fafafa" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="30.0" />
+      <TextField fx:id="textFieldId" layoutX="189.0" layoutY="30.0" prefHeight="25.0" prefWidth="287.0" promptText="ID:" AnchorPane.leftAnchor="189.0" AnchorPane.rightAnchor="164.0" />
+      <Button fx:id="search" layoutX="516.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #241c68;" text="Search" textFill="#fafafa" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="30.0" />
       <Label layoutX="45.0" layoutY="34.0" text="Enter brand id to find" textFill="#fafafa">
          <font>
             <Font name="Constantia" size="13.0" />

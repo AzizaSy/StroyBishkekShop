@@ -8,16 +8,16 @@
 
 <AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.supplierAdd">
     <children>
-        <TextField layoutX="157.0" layoutY="105.0" prefHeight="25.0" prefWidth="271.0" promptText="NAME :" />
-        <TextField layoutX="159.0" layoutY="191.0" prefHeight="25.0" prefWidth="271.0" promptText="PHONE NUMBER ;" />
-        <TextField layoutX="160.0" layoutY="233.0" prefHeight="25.0" prefWidth="271.0" promptText="ADDRESS :" />
-        <Button layoutX="266.0" layoutY="283.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #241c68;" text="ADD" textFill="#fafafa" />
-        <Button layoutX="57.0" layoutY="316.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" />
+        <TextField fx:id="name" layoutX="157.0" layoutY="105.0" prefHeight="25.0" prefWidth="271.0" promptText="NAME :" />
+        <TextField fx:id="number" layoutX="159.0" layoutY="191.0" prefHeight="25.0" prefWidth="271.0" promptText="PHONE NUMBER ;" />
+        <TextField fx:id="address" layoutX="160.0" layoutY="233.0" prefHeight="25.0" prefWidth="271.0" promptText="ADDRESS :" />
+        <Button fx:id="add" layoutX="266.0" layoutY="283.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #241c68;" text="ADD" textFill="#fafafa" />
+        <Button fx:id="menu" layoutX="57.0" layoutY="316.0" mnemonicParsing="false" style="-fx-background-color: #f8dd0a;" text="Menu" />
         <Label layoutX="57.0" layoutY="42.0" text="Enter information for the new supplier :" textFill="#fafafa">
             <font>
                 <Font name="Constantia" size="14.0" />
             </font>
         </Label>
-        <TextField layoutX="158.0" layoutY="150.0" prefHeight="25.0" prefWidth="271.0" promptText="SURNAME :" />
+        <TextField fx:id="surname" layoutX="158.0" layoutY="150.0" prefHeight="25.0" prefWidth="271.0" promptText="SURNAME :" />
     </children>
 </AnchorPane>
