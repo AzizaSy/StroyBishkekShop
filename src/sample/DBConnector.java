@@ -1,4 +1,4 @@
-package classes;
+package sample;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -11,8 +11,8 @@ public class DBConnector {
     private   final String USER_NAME = "root";
     private   final String PASSWORD = "";
     private   final String URL = "jdbc:mysql://127.0.0.1:3306/bishkekstroi";
-    protected  Statement statement;
-    protected  Connection connection;
+    public Statement statement;
+    public Connection connection;
     public  void getConnectionToDB() throws SQLException, IOException, ClassNotFoundException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

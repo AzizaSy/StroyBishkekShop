@@ -1,4 +1,4 @@
-package classes;
+package sample;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -8,8 +8,9 @@ import java.util.Scanner;
 import java.util.function.Predicate;
 
 public class Admin extends Cashier{
-    Admin(int dbId, String dbName, int Age) throws SQLException, IOException, ClassNotFoundException {
-        super(dbId, dbName, Age);
+
+    Admin(int dbId, String dbName, Position pos) throws SQLException, IOException, ClassNotFoundException {
+        super(dbId, dbName, pos);
     }
     protected void setName(String name){
         this.Name = name;

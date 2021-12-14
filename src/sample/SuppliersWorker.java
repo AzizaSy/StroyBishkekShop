@@ -1,4 +1,4 @@
-package classes;
+package sample;
 
 import java.io.IOException;
 import java.sql.ResultSet;

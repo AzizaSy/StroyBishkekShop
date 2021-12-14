@@ -1,4 +1,4 @@
-package classes;
+package sample;
 
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -11,6 +11,7 @@ abstract class MaterialWorker extends SuppliersWorker{
     final  String sqlForMakingConnectionBetweenSupAndMat = "INSERT materials_has_suppliers(materials_idmaterial, suppliers_idsupplier) VALUES (%d, %d);";
 
     protected class Material {
+
         private int  id;
         private String name;
         private String brand;
@@ -80,17 +81,14 @@ abstract class MaterialWorker extends SuppliersWorker{
         public int getPrice() {
             return this.price;
         }
-        public String getSupliersName() {
-            return this.supliers_name;
+        public String getSupliers_name() {
+            return supliers_name +" "+supliers_surname;
         }
-        public String getSupliersSurname() {
-            return this.supliers_surname;
+        public String getSupliers_phone() {
+            return supliers_phone;
         }
-        public String getSupliersPhone() {
-            return this.supliers_phone;
-        }
-        public String getSupliersAdress() {
-            return this.supliers_adress;
+        public String getSupliers_adress() {
+            return supliers_adress;
         }
         public int getSupIdEqualToMatID() {
             return this.supIdEqualToMatID;
@@ -111,8 +109,6 @@ abstract class MaterialWorker extends SuppliersWorker{
         public void setPrice(int price) {
             this.price = price;
         }
-
-
     }
 
     protected List<Material> getLM(){
@@ -165,10 +161,9 @@ abstract class MaterialWorker extends SuppliersWorker{
             System.out.println("Descript: " + m.getDescription());
             System.out.println("Quantity: " + m.getQuantity());
             System.out.println("Price: " + m.getPrice());
-            System.out.println("Supliers name: " + m.getSupliersName());
-            System.out.println("Supliers surname: " + m.getSupliersSurname());
-            System.out.println("Supliers phone: " + m.getSupliersPhone());
-            System.out.println("Supliers adress: " + m.getSupliersAdress());
+            System.out.println("Suplier full name: " + m.getSupliers_name());
+            System.out.println("Supliers phone: " + m.getSupliers_phone());
+            System.out.println("Supliers adress: " + m.getSupliers_adress());
             System.out.println("\n=================================\n");
         }
     }

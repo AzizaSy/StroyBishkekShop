@@ -9,22 +9,22 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CashierGetMater">
    <children>
-      <Button fx:id="menu" layoutX="704.0" layoutY="451.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="49.0" AnchorPane.rightAnchor="49.0" />
+      <Button fx:id="menu" layoutX="704.0" layoutY="451.0" mnemonicParsing="false" onAction="#goToCashierMenu" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #f8dd0a;" text="Menu" AnchorPane.bottomAnchor="49.0" AnchorPane.rightAnchor="49.0" />
       <Label alignment="CENTER" layoutX="275.0" layoutY="44.0" text="All materials available for sale" textFill="#fafafa" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="325.0">
          <font>
             <Font name="Constantia Bold" size="14.0" />
          </font>
       </Label>
-      <TableView fx:id="table" layoutX="17.0" layoutY="80.0" prefHeight="333.0" prefWidth="769.0" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="80.0">
+      <TableView fx:id="table" layoutX="17.0" layoutY="79.0" prefHeight="334.0" prefWidth="775.0" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="79.0">
          <columns>
             <TableColumn fx:id="id" prefWidth="35.0" text="ID" />
             <TableColumn fx:id="name" prefWidth="100.0" text="Name" />
             <TableColumn fx:id="brand" prefWidth="90.0" text="Brand" />
-            <TableColumn fx:id="quantaty" prefWidth="131.0" text="Quantaty" />
-            <TableColumn fx:id="preis" prefWidth="54.0" text="Preis" />
+            <TableColumn fx:id="quantaty" prefWidth="117.0" text="Quantaty" />
+            <TableColumn fx:id="preis" prefWidth="68.0" text="Preis" />
             <TableColumn fx:id="suppName" prefWidth="99.0" text="Supplier name" />
             <TableColumn fx:id="suppNumber" prefWidth="112.0" text="Supplier number" />
-            <TableColumn fx:id="suppaddress" prefWidth="139.0" text="Suppliers address" />
+            <TableColumn fx:id="suppaddress" prefWidth="153.0" text="Suppliers address" />
          </columns>
       </TableView>
    </children>

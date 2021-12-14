@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #15103c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CashierMenu">
    <children>
       <Label layoutX="22.0" layoutY="34.0" text="Welcome back Cashier !" textFill="#fafafa" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="415.0">
@@ -18,7 +17,7 @@
             <Font name="Constantia Bold" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="seeAllMater" layoutX="97.0" layoutY="118.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="SEE ALL MATERIALS" textFill="#fafafa" />
+      <Button fx:id="seeAllMater" layoutX="97.0" layoutY="118.0" mnemonicParsing="false" onAction="#goToCashierGetMater" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="SEE ALL MATERIALS" textFill="#fafafa" />
       <Button fx:id="findMaterId" layoutX="97.0" layoutY="189.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="FIND MATERIAL BY ID" textFill="#fafafa" />
       <Button fx:id="seeAllSupp" layoutX="366.0" layoutY="118.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="SEE ALL SUPPLIERS" textFill="#fafafa" />
       <Button fx:id="findSuppId" layoutX="366.0" layoutY="189.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: #241c68;" text="FIND SUPPLER BY ID" textFill="#fafafa" />
