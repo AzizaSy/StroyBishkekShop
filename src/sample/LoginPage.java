@@ -7,7 +7,11 @@ import java.sql.SQLException;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
-import DTO.EmployeeHandler;
+import NotControlers.Admin;
+import NotControlers.Cashier;
+import NotControlers.Position;
+import NotControlers.User;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,11 +19,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import org.w3c.dom.Node;
 
-public class LoginPage<N>  {
+public class LoginPage {
     protected DBConnector dbConnector = new DBConnector();
     public final String SQLUserSelecting = "SELECT ID,CONCAT(FName,\" \",LName) as Name , Position FROM `users` WHERE Login=\"%s\" and Password_=\"%s\";";
+    public static User Employee;
     @FXML
     private ResourceBundle resources;
 
@@ -42,8 +46,9 @@ public class LoginPage<N>  {
     private PasswordField password;
 
     @FXML
-    void Cancelation(ActionEvent event) {
-
+    void Exiting(ActionEvent event) {
+        Platform.exit();
+        System.exit(0);
     }
 
     @FXML
@@ -61,12 +66,10 @@ public class LoginPage<N>  {
             int userId = DBResponseAboutUser.getInt("ID");
             String fullName = DBResponseAboutUser.getString("Name");
             if(IsAdmin(DBResponseAboutUser.getString("Position"))){
-                Admin admin = new Admin(userId,fullName,Position.ADMINISTRATOR);
-                EmployeeHandler<Admin> EH = new EmployeeHandler<>(admin);
+                Employee= new Admin(userId,fullName, Position.ADMINISTRATOR);
                 goToScene(go,"CashierGetMater");
             }else{
-                Cashier cashier = new Cashier(userId,fullName,Position.CASHIER);
-                EmployeeHandler<Cashier> EH = new EmployeeHandler<>(cashier);
+                Employee = new Cashier(userId,fullName,Position.CASHIER);
                 goToScene(go,"CashierMenu");
             }
             DBResponseAboutUser.close();

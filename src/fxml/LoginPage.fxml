@@ -24,9 +24,9 @@
          </font>
       </Label>
       <TextField fx:id="login" layoutX="211.0" layoutY="154.0" prefHeight="25.0" prefWidth="173.0" promptText="Login:" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="256.0" />
-      <PasswordField fx:id="password" layoutX="211.0" layoutY="200.0" prefHeight="25.0" prefWidth="149.0" promptText="Password:" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="200.0" />
-      <Button fx:id="go" layoutX="260.0" layoutY="270.0" mnemonicParsing="false" onAction="#gotoUserMenu" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #f8dd0a;" text="Go" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="317.0" AnchorPane.topAnchor="270.0" />
-      <Button fx:id="cancel" layoutX="260.0" layoutY="313.0" mnemonicParsing="false" onAction="#Cancelation" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #f8dd0a;" text="Cancel" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="317.0" />
+      <PasswordField fx:id="password" layoutX="211.0" layoutY="200.0" prefHeight="25.0" prefWidth="173.0" promptText="Password:" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="256.0" AnchorPane.topAnchor="200.0" />
+      <Button fx:id="go" layoutX="266.0" layoutY="270.0" mnemonicParsing="false" onAction="#gotoUserMenu" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #f8dd0a;" text="Go" AnchorPane.leftAnchor="266.0" AnchorPane.rightAnchor="311.0" AnchorPane.topAnchor="270.0" />
+      <Button fx:id="cancel" layoutX="266.0" layoutY="312.0" mnemonicParsing="false" onAction="#Exiting" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #f8dd0a;" text="Exit" AnchorPane.leftAnchor="266.0" AnchorPane.rightAnchor="311.0" />
       <Label fx:id="loginMassage" layoutX="255.0" layoutY="237.0" textFill="#e40b0b" />
    </children>
 </AnchorPane>

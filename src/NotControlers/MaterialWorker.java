@@ -1,16 +1,16 @@
-package sample;
+package NotControlers;
 
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
-abstract class MaterialWorker extends SuppliersWorker{
+public abstract class MaterialWorker extends SuppliersWorker{
     private List<Material> LM = new ArrayList<>();
     final  String sqlForCreatingNewMaterial = "INSERT materials(idmaterial,Name, Brand, Description, Quantity, Price) VALUES (%d, \'%s\',\'%s\',\'%s\',%d,%d);";
     final  String sqlForMakingConnectionBetweenSupAndMat = "INSERT materials_has_suppliers(materials_idmaterial, suppliers_idsupplier) VALUES (%d, %d);";
 
-    protected class Material {
+    public class Material {
 
         private int  id;
         private String name;
@@ -111,7 +111,7 @@ abstract class MaterialWorker extends SuppliersWorker{
         }
     }
 
-    protected List<Material> getLM(){
+    public List<Material> getLM(){
         return this.LM;
     }
 

@@ -1,4 +1,6 @@
-package sample;
+package NotControlers;
+
+import sample.DBConnector;
 
 import java.io.IOException;
 import java.sql.ResultSet;

@@ -1,4 +1,4 @@
-package sample;
+package NotControlers;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -7,16 +7,10 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.function.Predicate;
 
-public class Admin extends Cashier{
+public class Admin extends User{
 
-    Admin(int dbId, String dbName, Position pos) throws SQLException, IOException, ClassNotFoundException {
+    public Admin(int dbId, String dbName, Position pos) throws SQLException, IOException, ClassNotFoundException {
         super(dbId, dbName, pos);
-    }
-    protected void setName(String name){
-        this.Name = name;
-    }
-    protected String getName(){
-        return this.Name;
     }
 
     //Supplier's methods

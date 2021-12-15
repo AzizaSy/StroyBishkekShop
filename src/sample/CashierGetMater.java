@@ -5,12 +5,13 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-import DTO.EmployeeHandler;
+import NotControlers.Admin;
+import NotControlers.MaterialWorker;
+import NotControlers.Position;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -67,8 +68,7 @@ public class CashierGetMater {
 
     @FXML
     void initialize() throws SQLException, IOException, ClassNotFoundException {
-            Admin user = new Admin(12,"bob",Position.ADMINISTRATOR);
-            ObservableList<MaterialWorker.Material> records = FXCollections.observableArrayList(user.getLM());
+            ObservableList<MaterialWorker.Material> records = FXCollections.observableArrayList(LoginPage.Employee.getLM());
             table.setItems(records);
             id.setCellValueFactory(new PropertyValueFactory<>("id"));
             name.setCellValueFactory(new PropertyValueFactory<>("name"));
